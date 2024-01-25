@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selectors in CSS</title>
+    <style>
+/* Element Selector */
+div{
+    background-color: rgb(22, 3, 106);
+    color: white;
+}
+/* Class Selector */
+.red{
+    background-color: red
+    ;
+}
+/* ID Selector */
+#pink{
+    background-color: pink;
+}
+
+/* Child Selector */
+div>p{
+    background-color: aqua;
+}
+
+/* Descendent Selector */
+div p{
+    background-color: black;
+    color: white;
+}
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Pseudo Selector */
+a:visited{
+    color: black;
+
+}
+a:link{
+    color: green;
+
+}
+a:active{
+    color: brown;
+
+}
+a:hover{
+    background-color: aqua;
+}
+p:first-child{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <div>
+        This is in  Div 
+        <p>This is Paragraph in div class</p>
+    </div>
+<div class="red"> This is in Div of class red</div>
+<div id="pink"> This is in Div of id pink</div>
+<div>
+    <article>
+        <p>This is para in article which is in div</p>
+    </article>
+</div>
+
+<a href="http://www.google.com">GO TO GOOGLE</a>
+<main>
+    <p>This is para first</p>
+    <p>This is second para</p>
+</main>
+</body>
+</html>
