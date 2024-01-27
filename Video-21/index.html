@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #heading{
+            color: aqua;
+        }
+        h1{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+
+        }
+        .cpurple{
+            color: purple;
+
+        }
+        .cpink{
+            color: pink;
+        }
+
+        .one{
+            color:  green;
+        }
+        .three{
+            color: red;
+
+        }
+        .two{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading"class="yellow cpink cpurple">CSS Specificity</h1>
+    <!-- This is not rocket Science -->
+    <!-- Just lik precedence of Python -->
+    <!-- Inline css > ID selector > class selector(The one which is stated at last has greater precdence) > element selector -->
+
+    <h2 class="one two three">
+        The class selector which is at last has greater specificity
+    </h2>
+</body>
+</html>
