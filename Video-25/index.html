@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            background-color: aqua;
+            /* Makers are basically out of tthe list and bg doesnt apply to them to overcome that */
+            list-style-position: inside;
+            /* You can give coustom markers */
+            list-style-type:'🌟';
+            /* border: 2px solid red; */
+            
+            list-style: none;
+            padding: 40px;
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav >
+        <ul style="display: flex;">
+            <li>Home</li>
+            <li>About</li>
+            <li>Help</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --clr: aqua
+            --bc: chartreuse
+            /* These are varibles and you can give it ny name followeb by -- */
+        }
+        div{
+            background-color: var(--clr);
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 30px;
+            background-color: chartreuse;
+        }
+        ul li{
+            padding: 34px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+</nav>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos excepturi nesciunt deleniti ullam, ut rem illum aliquid esse beatae voluptatum, dolorum, sint quam? Consectetur nulla perferendis molestiae eius soluta quod, ad numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iure, culpa porro praesentium accusantium explicabo, deserunt non dicta ipsa ducimus nihil debitis exercitationem error, necessitatibus esse dignissimos quisquam eveniet sequi est labore tenetur. Quam.
+</div>
+</body>
+</html>

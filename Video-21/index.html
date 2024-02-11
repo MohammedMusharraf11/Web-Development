@@ -33,15 +33,20 @@
         .two{
             color: blueviolet;
         }
+
+    /* Attribute selector */
+    [data-x=a]{
+        background-color: coral;
+    }
     </style>
 </head>
 <body>
     <h1 id="heading"class="yellow cpink cpurple">CSS Specificity</h1>
     <!-- This is not rocket Science -->
     <!-- Just lik precedence of Python -->
-    <!-- Inline css > ID selector > class selector(The one which is stated at last has greater precdence) > element selector -->
+    <!-- Inline CSS> ID selector > class selector(The one which is stated at last has greater precdence) or attribute selector > element selector -->
 
-    <h2 class="one two three">
+    <h2 class="one two three" data-x="a">
         The class selector which is at last has greater specificity
     </h2>
 </body>

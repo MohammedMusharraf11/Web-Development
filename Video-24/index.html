@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SHADOWS </title>
+    <style>
+        /* This is the syntax for shadow */
+        /* box-shadow: h-offset v-offset blur spread color inset; */
+        .box1 {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 4px 4px 6px blue;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px yellowgreen;
+            /* Border occupies space but outline doesn't and outline follows border */
+            outline: 2px solid red;
+            border: 2px solid black;
+            border-radius: 15px;
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">I am a box</div>
+    <p class="text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatem odio. Delectus
+        quaerat odit itaque eius molestiae esse fuga modi atque ipsa.</p>
+</body>
+
+</html>
